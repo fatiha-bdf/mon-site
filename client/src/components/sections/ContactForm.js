@@ -64,7 +64,7 @@ function ContactForm(props) {
 			</Row>
 		</Col>
 		<Form.Group controlId="exampleForm.ControlTextarea1">
-			<Form.Control as="textarea" rows="10" required maxLength="200"
+			<Form.Control as="textarea" rows="10" required maxLength="1000"
 			name='message' placeholder="Message" value={message} onChange={onChange}/>
 		</Form.Group>
 		<Button variant="success" type="submit" value='envoyer'>

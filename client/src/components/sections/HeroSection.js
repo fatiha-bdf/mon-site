@@ -1,40 +1,59 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Button } from '../layout/Button';
 import { Link } from 'react-router-dom'
 import '../styles/HeroSection.css';
 import '../styles/Game.css';
 import video from '../../videos/video5.mp4'
-
+import bgimg from '../../photos/bgimg.png'
 import {Coordonees} from './Coordonees'
 
 function HeroSection() {
+  const [variable, setVariable] = useState('no');
+
+  const scroll = () => {
+    window.scrollTo({
+      top: 800,
+      behavior: 'smooth'})
+  }
+
+	useEffect(() => {
+    if(window.innerWidth > 480) {
+      setVariable('yes')
+    }
+	},[])
+
+
+
 
   return (
     <div className='hero-container'>
-      <video className='mainvideo' src ={video} autoPlay loop muted />
+      {variable === 'yes' ?
+        <video className='mainvideo' src ={video} autoPlay loop muted />
+      :
+      <img className='mainvideo' src ={bgimg} alt='' />
+      }
       <h1>Fatiha Boudyaf </h1>
-      <h3>Developeuse Web Full Stack </h3>
+      <h3>Developeuse Full Stack</h3>
       <div className='thegame'>
         <div className= 'girl-forward'></div>
       </div>
       <div className='tech'>
-        <p className='p1'> HTML/CSS |</p>
-        <p className='p2'> JavaScript |</p>
-        <p className='p3'> React |</p>
-        <p className='p4'> NodeJS |</p>
-        <p className='p5'> Express|</p>
-        <p className='p6'> Bootstrap |</p>
-        <p className='p7'> PHP |</p>
-        <p className='p8'> SQL  |</p>
-        <p className='p9'> Photoshop</p>
+        <p className='p1'> ReactJs |</p>
+        <p className='p2'> NodeJS |</p>
+        <p className='p3'> Express |</p>
+        <p className='p4'> Bootstrap |</p>
+        <p className='p5'> JavaScript |</p>
+        <p className='p6'> PHP |</p>
+        <p className='p7'> C |</p>
+        <p className='p8'> Docker |</p>
+        <p className='p9'> AWS </p>
       </div>
-
       <div className='hero-btns'>
         <Link to='/contact' className='btn2'>
-          <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'
-          >Contactez moi!</Button>
+          <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'
+          >Contactez moi <i className='far' /></Button>
         </Link>
-        <Link to='/Profile' className='btn2'>
+        <Link onClick={scroll} className='btn2'>
           <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'
           >Accédez à mon profil <i className='far fa-play-circle' /></Button>
         </Link>

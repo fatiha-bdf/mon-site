@@ -13,6 +13,9 @@
 	font-family: 'Courier New', Courier, monospace;
 }
 
+.titre h3{
+	font-size: 17px
+}
 .bodyy{
 	margin: 0 auto; /* this for center div */
 	max-width: 1400px;

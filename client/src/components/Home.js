@@ -7,10 +7,11 @@ import MonParcours from './sections/MonParcours';
 import Footer from './sections/Footer';
 
 const Home = () => {
+
 	return (
 		<div>
 			<HeroSection />
-			<AboutMe />
+			<AboutMe/>
 			<Competences />
 			<MonParcours />
 			<Projets />

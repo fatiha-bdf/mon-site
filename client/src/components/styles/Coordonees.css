@@ -25,7 +25,13 @@
   .mail1 a{
 	color: #fff;
   }
+  .mail1 a:hover{
+	color: #fff;
+  }
   .mail2 a{
+	color: #fff;
+  }
+  .mail2 a:hover{
 	color: #fff;
   }
 

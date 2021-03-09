@@ -19,6 +19,20 @@
 	font-family: 'Courier New', Courier, monospace;
 }
 
+.bottomlink{
+	font-size: 18px;
+}
+.bottomlink a{
+	color: #fff;
+}
+
+.bottomlink a:hover{
+	color: #fff;
+}
+
+.bottomlink i{
+	color: white;
+}
 
 .title h3{
 	margin-top: 25px;

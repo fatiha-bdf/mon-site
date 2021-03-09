@@ -8,6 +8,7 @@ import {
 	CLEAR_ERRORS,
 	SENDFORM_SUCCESS,
 	SENDFORM_FAIL,
+	// DOWNLOAD,
 } from '../types'
 
 const AuthState = props => {
@@ -15,7 +16,8 @@ const AuthState = props => {
 		loading: false,
 		error: null,
 		formSent: '',
-		alerts: []
+		alerts: [],
+		scroll: false,
 	}
 
 	const [state, dispatch] = useReducer(AuthReducer, initialState)
@@ -42,10 +44,30 @@ const AuthState = props => {
 		}
 	}
 
+	// const download = async () => {
+	// 	showLoader()
+	// 	const config = {
+	// 		headers: {
+	// 			'Content-Type':'application/json',
+	// 		}
+	// 	}
+	// 	try {
+	// 		const res = await axios.get('/portfolio/download', config)
+	// 		dispatch ({
+	// 			type: DOWNLOAD,
+	// 			payload: res.data
+	// 		})
+	// 	} catch (err) {
+	// 		dispatch ({
+	// 			type: SENDFORM_FAIL,
+	// 			payload: err.response.data.msg
+	// 		})
+	// 	}
+	// }
+
 	const showLoader = () => dispatch({ type: SHOW_LOADER })
 
 	const clearErrors = () => dispatch ({ type: CLEAR_ERRORS })
-
 
 
 	return <AuthContext.Provider  // values i can use outside when i do "context."
@@ -56,6 +78,7 @@ const AuthState = props => {
 			alerts: state.alerts,
 			clearErrors,
 			sendForm,
+			// download,
 		}}>
 		{props.children}
 	</AuthContext.Provider>

@@ -7,6 +7,9 @@ import '../styles/Coordonees.css';
 
 
 export const Coordonees = () => {
+	const x = () => {
+		window.open('https://github.com/fatiha-bdf')
+	}
 	return (
 		<div className='contact'>
 			<div className='mailnumsocial'>
@@ -23,14 +26,10 @@ export const Coordonees = () => {
 			</div>
 			<div className='mailnumsocial'>
 				<div className='mail2'>
-					<Link to='/' target='_blank' aria-label='LinkedIn'>
-						LinkedIn <i className ='fab fa-linkedin' />
-					</Link>
+					<a href="https://linkedin.com/in/fatiha-bdf" target="_blank" >Linkedin <i className ='fab fa-linkedin' /></a>
 				</div>
 				<div className='mail2'>
-					<Link to='/' target='_blank' aria-label='Github'>
-						Github <i className ='fab fa-github' />
-					</Link>
+					<a href="https://github.com/fatiha-bdf/" target="_blank" >Github <i className ='fab fa-github' /></a>
 				</div>
 			</div>
 		</div>

@@ -3,6 +3,7 @@ import {
 	CLEAR_ERRORS,
 	SENDFORM_SUCCESS,
 	SENDFORM_FAIL,
+	// DOWNLOAD,	
 } from '../types'
 
  export default (state, action) => {

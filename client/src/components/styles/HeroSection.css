@@ -38,9 +38,11 @@
   opacity: 0;
   transform: translate3d(0, 0, 0);
   animation: ani2 5s ease-out 1s forwards;
+  text-align: center;
 }
 
 .hero-container h3 {
+  text-align: center;
   font-size: 20px;
   padding-top: 1%;
   opacity: 0;

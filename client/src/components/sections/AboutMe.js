@@ -1,18 +1,25 @@
 import React from 'react';
 import '../styles/AboutMe.css';
+import me from '../../photos/me.jpeg'
 
 function AboutMe() {
 
+
 	return (
 		<div className = 'main'>
-			<div className = 'about'>
-			<h1>À propos de moi.</h1>
-			<br/>
-			<p>Developpeuse Web <strong>courieuse, passionée et remplie d'energie.</strong></p>
-			<p>Fraichement sortie de <strong>l'école 42</strong>, J'ai pu travailler sur divers projets m'ayant permis de <strong>maitriser les subtilités des differents langages informatiques</strong>.</p>
-			<p>Je suis également capable, de par ma <strong>capacité d'analyse</strong>, et mon <strong>esprit créatif</strong> d'apporter des <strong>solutions rapides aux problèmes</strong> rencontrés.</p>
-			<p> <strong>indépendante,  autodidacte,</strong> et déjà forte d’une expérience professionnelle enrichissante je recherche une opportunité de et rejoindre une <strong>équipe dynamique</strong> qui aspire au <strong>progrès constant et au challenge</strong>.
-			</p>
+			{/* <div className='titr'><h1>À propos de moi.</h1></div> */}
+			<div className = 'tout'>
+				<div className = 'avatar'>
+					<img className='avatar' src ={me} alt='' style={{width: 150, height: 140, borderRadius: 150/2}} />
+
+				</div>
+
+				<div className = 'about'>
+				<br/>
+				<p>Deveffskdjfhskdjfhsdkloppeuse <strong>curieuse et remplie d'energie.</strong></p>
+				<p>Passionnée par l’innovation et ce qu’elle représente, je suis constamment à l'affut de nouvelles idées et nouveautés technologiques.</p>
+				<p> J'aime relever les <strong>challenges en equipe</strong>, realiser l'impossible et penser au delà des <strong>limites</strong> fixées.</p>
+				</div>
 			</div>
 		</div>
 	)

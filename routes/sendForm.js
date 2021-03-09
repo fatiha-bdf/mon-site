@@ -3,9 +3,8 @@ var router = express.Router();
 const { check, validationResult } = require('express-validator');
 const config = require('config') // the conjig.json i created inside config dir
 const nodemailer = require ('nodemailer')
+// require('dotenv').config()
 
-// @route : POST matcha/users
-// @descr : Register user
 // @access: Public
 router.post('/', [
 	check('companie', 'companie is required').not().isEmpty(),
@@ -27,11 +26,12 @@ router.post('/', [
 				}
 			});
 			const mailOptions = {
-				from: `from ${companie} ${email}` ,
+				from: `from ${companie}` ,
 				to: 'fatiha.boudyaf@gmail.com', // here has to be user email
 				subject: "we are interested!",
-				text: `${message}`,
-				};
+				text: `${message}
+				contact us ${email}`,
+			};
 			transporter.sendMail(mailOptions, function (err, info) {
 				if(err){
 					console.log(err)
