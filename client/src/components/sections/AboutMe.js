@@ -18,7 +18,7 @@ function AboutMe() {
 				<br/>
 				<p>Deveffskdjfhskdjfhsdkloppeuse <strong>curieuse et remplie d'energie.</strong></p>
 				<p>Passionnée par l’innovation et ce qu’elle représente, je suis constamment à l'affut de nouvelles idées et nouveautés technologiques.</p>
-				<p> J'aime relever les <strong>challenges en equipe</strong>, realiser l'impossible et penser au delà des <strong>limites</strong> fixées.</p>
+				<p> J'aime relever les <strong>challenges en equipe</strong>, et penser au delà des <strong>limites</strong> fixées.</p>
 				</div>
 			</div>
 		</div>
