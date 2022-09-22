@@ -14,20 +14,27 @@ router.post('/', [
 	],
 	async (req, res) => {
 		const errors = validationResult(req)
+		const CLIENT_ID = '452902884247-o2qncqb47c5h8u045tnp36nkrmtr3akk.apps.googleusercontent.com'
+		const CLIENT_SECRET = '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'
+		const REDIRECT_URI = 'https://developers.google.com/oauthplayground'
+		const REFRESH_TOKEN = '1//04IFMb_Woj_4VCgYIARAAGAQSNwF-L9IrAFQyTLlbVU1giZu5emT9v7ymRO7tveKgTqzlKhg2d23tK7mYuRObcBdNnjk2CN1D0rc'
+		const oAuth2Client = new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI)
+		oAuth2Client.setCredentials({refresh_token: REFRESH_TOKEN})
 		if (!errors.isEmpty()) {
 			return res.status(400).json({ msg: errors.array()[0].msg })
 		}
 		const {email, message, companie} = req.body
 		try {
+			const accessToken =  await oAuth2Client.getAccessToken()
 			let transporter = nodemailer.createTransport({
 				service: 'gmail',
 				auth: {
 					type: 'OAuth2',
 					user: 'portfolio59600@gmail.com',
-					clientId: '452902884247-o2qncqb47c5h8u045tnp36nkrmtr3akk.apps.googleusercontent.com',
-					clientSecret: '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',
-					refreshToken: '1//04IFMb_Woj_4VCgYIARAAGAQSNwF-L9IrAFQyTLlbVU1giZu5emT9v7ymRO7tveKgTqzlKhg2d23tK7mYuRObcBdNnjk2CN1D0rc',
-					accessToken: await oAuth2Client.getAccessToken(), // generate access token
+					clientId: CLIENT_ID,
+					clientSecret: CLIENT_SECRET,
+					refreshToken: REFRESH_TOKEN,
+					accessToken: accessToken, // generate access token
 				}
 			});
 			// let transporter = nodemailer.createTransport({
