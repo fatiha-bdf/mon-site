@@ -36,7 +36,7 @@ function Competences() {
 					<div className="progress" style={{height: "20px"}}>
 						<div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{width: '85%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Bootstrap</div>
 					</div>
-					
+
 				</div>
 				<div className='technique2'>
 					<div className='titre'><h3>Gestion de base de données</h3></div>

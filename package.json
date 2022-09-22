@@ -14,6 +14,7 @@
   "author": "fatiha",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "bcryptjs": "^2.4.3",
@@ -27,6 +28,7 @@
     "express-session": "^1.17.1",
     "express-validator": "^6.6.1",
     "fs": "0.0.1-security",
+    "googleapis": "^105.0.0",
     "http-proxy-middleware": "^1.0.5",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.20",

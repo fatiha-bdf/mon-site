@@ -60,7 +60,7 @@ function MonParcours() {
 					<div className= 'body-parcours'>
 						<div className= 'part' onMouseEnter={equal} onMouseLeave={leaveEqual}>
 							<h3>Responsable d'Unite Opérationnel</h3>
-							<p>2016-2018 | Equal Esto | Villejuif, France</p>
+							<p>2016-2019 | Equal Esto | Villejuif, France</p>
 						</div>
 						<div className= 'part' onMouseEnter={foxtons} onMouseLeave={leaveFoxtons}>
 							<h3>Agent Immobilier</h3>

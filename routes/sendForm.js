@@ -3,6 +3,7 @@ var router = express.Router();
 const { check, validationResult } = require('express-validator');
 const config = require('config') // the conjig.json i created inside config dir
 const nodemailer = require ('nodemailer')
+const {google} = require ('googleapis')
 // require('dotenv').config()
 
 // @access: Public
@@ -21,10 +22,21 @@ router.post('/', [
 			let transporter = nodemailer.createTransport({
 				service: 'gmail',
 				auth: {
-					user: 'fboudyaf.matcha@gmail.com',
-					pass: 'matcha@42'
+					type: 'OAuth2',
+					user: 'portfolio59600@gmail.com',
+					clientId: '452902884247-o2qncqb47c5h8u045tnp36nkrmtr3akk.apps.googleusercontent.com',
+					clientSecret: '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',
+					refreshToken: '1//04IFMb_Woj_4VCgYIARAAGAQSNwF-L9IrAFQyTLlbVU1giZu5emT9v7ymRO7tveKgTqzlKhg2d23tK7mYuRObcBdNnjk2CN1D0rc',
+					accessToken: await oAuth2Client.getAccessToken(), // generate access token
 				}
 			});
+			// let transporter = nodemailer.createTransport({
+			// 	service: 'gmail',
+			// 	auth: {
+			// 		user: 'fboudyaf.matcha@gmail.com',
+			// 		pass: 'matcha@42'
+			// 	}
+			// });
 			const mailOptions = {
 				from: `from ${companie}` ,
 				to: 'fatiha.boudyaf@gmail.com', // here has to be user email

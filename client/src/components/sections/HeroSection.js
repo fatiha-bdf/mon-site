@@ -45,8 +45,8 @@ function HeroSection() {
         <p className='p5'> JavaScript |</p>
         <p className='p6'> PHP |</p>
         <p className='p7'> C |</p>
-        <p className='p8'> Docker |</p>
-        <p className='p9'> AWS </p>
+        <p className='p8'> HTML |</p>
+        <p className='p9'> CSS </p>
       </div>
       <div className='hero-btns'>
         <Link to='/contact' className='btn2'>

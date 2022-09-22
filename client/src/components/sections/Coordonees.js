@@ -21,7 +21,7 @@ export const Coordonees = () => {
 				</div>
 				<div className='mail1'>
 					<MDBIcon icon="phone-alt" />
-					<PhoneNumber  number="+33649636775" isLinked={true} />
+					<PhoneNumber  number="+33614011232" isLinked={true} />
 				</div>
 			</div>
 			<div className='mailnumsocial'>
