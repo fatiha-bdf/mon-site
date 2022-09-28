@@ -5,7 +5,7 @@ function Competences() {
 	return (
 		<div className = 'competences'>
 			<div className='titre'>
-				<h1>Competences</h1>
+				<h1>Compétences</h1>
 			</div>
 			<div className= 'bodyy'>
 				<div className= 'technique1'>

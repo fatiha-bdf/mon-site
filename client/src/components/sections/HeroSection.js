@@ -33,7 +33,7 @@ function HeroSection() {
       <img className='mainvideo' src ={bgimg} alt='' />
       }
       <h1>Fatiha Boudyaf </h1>
-      <h3>Developeuse Full Stack</h3>
+      <h3>Dévelopeuse Full Stack</h3>
       <div className='thegame'>
         <div className= 'girl-forward'></div>
       </div>
