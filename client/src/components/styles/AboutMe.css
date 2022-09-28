@@ -1,7 +1,7 @@
 .main {
 	background-color: #fff;
 	background-color: rgba(255,255,255,0.7);
-	min-height: 50vh;
+	min-height: 30vh;
 	width: 100%;
 	padding: 50px;
 }
@@ -28,7 +28,7 @@
 	padding: 2%;
 }
 
-.about p {
+.about h5 {
 	align-items: center;
 	font-family: 'Courier New', Courier, monospace;
 }
@@ -52,6 +52,6 @@
 	}
 	.avatar {
 		width: 100%;
-		text-align: center;	
+		text-align: center;
 	}
 }

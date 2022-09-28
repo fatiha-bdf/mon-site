@@ -45,25 +45,25 @@ function MonParcours() {
 				<div className= 'all'>
 					<div className= 'body-parcours'>
 						<div className= 'part'>
-							<h3>École 42</h3>
-							<p>2018-Present</p>
+							<h4>Préparation Bac+3/4 Développeur Full Stack en alternance</h4>
+							<p>Cloud Campus - 2022/2024</p>
 						</div>
 						<div className= 'part'>
-							<h3>Licence Langues et Communications</h3>
+							<h4>Formation concepteurs développeurs de solutions informatiques</h4>
+							<p>Ecole 42 - 2019/2022</p>
+						</div>
+						<div className= 'part'>
+							<h4>Licence Langues et Communications</h4>
 							<p>2012-2015 | Université Paris X</p>
-						</div>
-						<div className= 'part'>
-							<h3>Bac ES</h3>
-							<p>2011</p>
 						</div>
 					</div>
 					<div className= 'body-parcours'>
 						<div className= 'part' onMouseEnter={equal} onMouseLeave={leaveEqual}>
-							<h3>Responsable d'Unite Opérationnel</h3>
+							<h4>Responsable d'Unite Opérationnel</h4>
 							<p>2016-2019 | Equal Esto | Villejuif, France</p>
 						</div>
 						<div className= 'part' onMouseEnter={foxtons} onMouseLeave={leaveFoxtons}>
-							<h3>Agent Immobilier</h3>
+							<h4>Agent Immobilier</h4>
 							<p>2015-2016 | Foxtons | Londres, Royaume unis</p>
 						</div>
 					</div>

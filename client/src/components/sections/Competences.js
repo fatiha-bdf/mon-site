@@ -17,7 +17,7 @@ function Competences() {
 						<div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{width: '85%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Javascript</div>
 					</div>
 					<div className="progress" style={{height: "20px"}}>
-						<div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{width: '80%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">PHP</div>
+						<div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{width: '70%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">PHP</div>
 					</div>
 					<div className="progress" style={{height: "20px"}}>
 						<div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{width: '80%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Language C</div>
@@ -44,18 +44,18 @@ function Competences() {
 						<div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{width: '80%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">MYSQL</div>
 					</div>
 					<div className="progress" style={{height: "20px"}}>
-						<div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{width: '80%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">MongoDB</div>
+						<div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{width: '30%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">MongoDB</div>
 					</div>
 					<div className='titre'><h3>Service conteneur et cloud</h3></div>
 					<div className="progress" style={{height: "20px"}}>
-						<div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{width: '50%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Amazon AWS</div>
+						<div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{width: '20%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Amazon AWS</div>
 					</div>
 					<div className="progress" style={{height: "20px"}}>
-						<div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{width: '65%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Docker</div>
+						<div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{width: '30%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Docker</div>
 					</div>
 					<div className='titre'><h3>Traitement d'images et montages vidéos</h3></div>
 					<div className="progress" style={{height: "20px"}}>
-						<div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{width: '50%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Photoshop</div>
+						<div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{width: '70%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Photoshop</div>
 					</div>
 					<div className="progress" style={{height: "20px"}}>
 						<div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{width: '50%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">After Effect</div>

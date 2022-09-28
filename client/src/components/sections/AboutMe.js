@@ -12,13 +12,12 @@ function AboutMe() {
 				</div>
 				<div className = 'about'>
 				<br/>
-				<p><strong>curieuse et remplie d'energie.</strong></p>
-				<p>Passionnée par l’innovation et ce qu’elle représente, je suis constamment à l'affut de nouvelles idées et nouveautés technologiques.</p>
-				<p> J'aime relever les <strong>challenges en equipe</strong>, et penser au delà des <strong>limites</strong> fixées.</p>
+				<h5>Développeuse <strong>curieuse et remplie d'energie.</strong></h5>
+				<h5>Passionnée par l’innovation, j'aime relever les <strong>challenges en équipe</strong>, et penser au delà des <strong>limites</strong> fixées.</h5>
+				<h5>Je désire aujourd'hui mettre mon savoir en pratique dans un projet stimulant au sein d'une équipe motivée par le challenge.</h5>
 				</div>
 			</div>
 		</div>
 	)
 }
-
 export default AboutMe
